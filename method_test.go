@@ -11,7 +11,7 @@ func TestApple(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := Apple(); got == tt.want {
+			if got := Apple(3); got == tt.want {
 				t.Errorf("Apple() = %v, unwanted %v", got, tt.want)
 			}
 		})
